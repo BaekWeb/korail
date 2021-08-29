@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*  content 3, 4번째 article style */
+/* 이벤트 & 공지 이미지 */
+.event_img > div,
+.notice_img > div {
+  width: 100%;
+  height: 100%;
+}
+.event_img > div a,
+.notice_img > div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.event_img > div a img,
+.notice_img > div a img {
+  width: 100%;
+  height: 100%;
+}
+
+

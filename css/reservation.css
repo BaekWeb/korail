@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* reservation style */
+/* 승차권 간편예약 / 기차여행 검색 */
+.content .reservation {
+  gap: 0;
+}
+.content .reservation .tab {
+  flex: 1;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.content .reservation .tab .tab_item {
+  flex: 1;
+}
+.content .reservation .tab .tab_item > h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: #083b82;
+  background-color:#0397d6;
+  cursor: pointer;
+}
+.content .reservation .tab .tab_item > h3.tabShow {
+  color:#ffffff;
+  background-color: #083b82;
+}
+.content .reservation .tab .tab_item > div {
+  display: none;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.content .reservation .tab .tab_item > div.tabShow {
+  display: block;
+}
+.content .reservation .tab .tab_item > div > form > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+/* form label span */
+.content .reservation .tab .tab_item > div > form > ul > li label,
+.content .reservation .tab .tab_item > div > form > ul > li span {
+  font-size: 13px;
+  width: 55px;
+}
+
+/* form input select */
+.content .reservation .tab .tab_item > div > form > ul > li input,
+.content .reservation .tab .tab_item > div > form > ul > li input::placeholder,
+.content .reservation .tab .tab_item > div > form > ul > li select {
+  font-size: 11px;
+  color: #898989
+}
+.content .reservation .tab .tab_item > div > form > ul > li input {
+  flex: 1;
+  width: 100%;
+}
+.content .reservation .tab .tab_item > div > form > ul > li select {
+  width: 50%;
+  height: 18px;
+}
+
+/* form p a */
+.content .reservation .tab .tab_item > div > form > ul > li > a {
+  width: 18px;
+  height: 18px;
+}
+.content .reservation .tab .tab_item > div > form > p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+  width: 60%;
+  margin: 10px auto;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #ed4f44;
+}
+.content .reservation .tab .tab_item > div > form > p a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+/* tab_site */
+.content .reservation .tab_site {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .reservation .tab_site > li {
+  width: 50%;
+}
+.content .reservation .tab_site > li:hover img:nth-child(1) {display: none;}
+.content .reservation .tab_site > li:hover img:nth-child(2) {display: block;}
+.content .reservation .tab_site > li img:nth-child(2) {display: none;}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* news style */
+/* 소식 */
+.content .news > div {
+  position: relative;
+  background: url("../image/common/IMG_5874.jpg") no-repeat center;
+  background-size: cover;
+}
+.content .news > div p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: rgba(19,19,19,0.8);
+}
+
+/* tablet - 768px ~ 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content .news > div p {
+    padding: 20px;
+  }
+}
+
+/* mo -  ~ 767px*/
+@media all and (max-width: 767px) {
+  .content .news > div p {
+    padding: 20px;
+  }
+}

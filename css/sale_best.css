@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* sale & best style */
+/* 세일상품 */
+.content .sale > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 10px;
+  border: 1px solid #727272;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.content .sale > ul > li {
+  flex: 1;
+}
+
+/* 베스트상품*/
+.content .best {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+.content .best > ul {
+  flex: 1;
+}
+.content .best > ul li {
+  height: 100%;
+}
+.content .best > ul li img {
+  height: 100%;
+  object-fit: cover;
+}
+

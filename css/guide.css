@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* guide style */
+/* 종합이용가이드 */
+.content .guide > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.content .guide > ul li {
+  height: 100%;
+}
+.content .guide > ul li img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* tablet - 901px ~ 1024px*/
+@media (min-width: 901px) and (max-width: 1024px) {
+  .content .guide > ul {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+
